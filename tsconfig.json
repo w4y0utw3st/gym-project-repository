@@ -8,5 +8,5 @@
     "skipLibCheck": true
   },
   "include": ["**/*.ts"],
-  "exclude": ["node_modules", "generated"]
+  "exclude": ["node_modules", "generated", "web"]
 }
