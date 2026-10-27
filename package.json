@@ -5,6 +5,7 @@
     "dev": "concurrently -n server,web -c blue,green \"npm run dev:server\" \"npm run dev:web\"",
     "dev:server": "tsx watch server/index.ts",
     "dev:web": "vite --config web/vite.config.ts --host localhost",
+    "build": "prisma generate && vite build --config web/vite.config.ts",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev"
   },
